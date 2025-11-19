@@ -3,7 +3,7 @@ package main
 func zapros() {
 	names := []string{"Max", "Dmitriy", "Alexander", "Sergey", "Anthony", "Tolyan"}
 	var (
-		imput  string = "Dmitriy"
+		imput  string = "Dmitriy" //  Строка для поиска
 		target bool   = false
 	)
 	for _, v := range names {
