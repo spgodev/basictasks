@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func counteven() {
 	even := []int64{-7, -4, 1, 3, 4, 8}
 	var count int64 = 0
 	{

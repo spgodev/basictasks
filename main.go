@@ -2,6 +2,8 @@ package main
 
 func main() {
 
+	summa()      // Сумма элементов tsk1
+	counteven()  // Подсчет четных tsk2
 	countodd()   // Подсчет нечетных tsk3
 	arithm()     // Среднее арифмитическое tsk4
 	bigone()     // Самое большое tsk5
