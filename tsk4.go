@@ -1,23 +1,22 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func arithm() {
-	num := []int64{-98, -7, -4, 1000, 3, 4, 8, 34, 48}
-	var arithm int64 = 0
-	var sum int64 = 0
-	var count int64 = 0
-
+func arithm(num []int64) string {
+	var sum int64
 	for _, v := range num {
 		sum += v
-		count++
 	}
-	arithm = sum / count
-	if arithm > 100 {
-		fmt.Println("Big one!")
-	} else {
-		fmt.Println("Среднее арифмитическое=", arithm)
+
+	if len(num) == 0 {
+		return "empty slice"
 	}
+
+	avg := sum / int64(len(num))
+
+	if avg > 100 {
+		return "Big one!"
+	}
+
+	return fmt.Sprintf("Среднее арифмитическое = %d", avg)
 }
