@@ -1,15 +1,13 @@
 package main
 
 import (
-	"testing"
-
 	"fmt"
+	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
 
 func TestCountodd(t *testing.T) {
-
 	testTable := []struct {
 		odd      []int64
 		expected int64
@@ -24,15 +22,18 @@ func TestCountodd(t *testing.T) {
 		},
 		{
 			odd:      []int64{2, 2, 2, 2, 2},
-			expected: 1,
+			expected: 0,
 		},
 	}
+
 	for _, testCase := range testTable {
 		result := countodd(testCase.odd)
-		assert.Equal(t, testCase.expected, result, "Countodd()")
-		fmt.Sprintf("Incorrect result. Expected %d, got %d", testCase.odd, result)
-		if result != testCase.expected {
-			t.Errorf("Incorrect count. Expected %d, got %d", testCase.expected, result)
-		}
+
+		assert.Equal(
+			t,
+			testCase.expected,
+			result,
+			fmt.Sprintf("Incorrect result. Expected %d, got %d", testCase.expected, result),
+		)
 	}
 }

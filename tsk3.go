@@ -6,7 +6,7 @@ func countodd(odd []int64) int64 {
 	)
 	{
 		for _, v := range odd {
-			if v%2 == 1 {
+			if v%2 != 0 {
 				count++
 			}
 		}
