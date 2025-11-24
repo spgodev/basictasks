@@ -6,7 +6,7 @@ func main() {
 	//counteven()  // Подсчет четных tsk2
 	//countodd()   // Подсчет нечетных tsk3
 	//arithm()     // Среднее арифмитическое tsk4
-	bigone()     // Самое большое tsk5
+	//bigone()     // Самое большое tsk5
 	strings()    // Максимальная строка tsk6
 	swap()       // Переворот среза tsk7
 	dellodd()    // Удалить четные tsk8
