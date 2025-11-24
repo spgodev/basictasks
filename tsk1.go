@@ -1,14 +1,13 @@
 package main
 
-import "fmt"
+func summa(sums []float64) float64 {
 
-func summa() {
-	summa := []float64{1.1, 1.3, 1.8, 2.0, 3.6}
+	var (
+		plus float64
+	)
 
-	var plus float64 = 0
-
-	for _, v := range summa {
+	for _, v := range sums {
 		plus += v
 	}
-	fmt.Println("Сумма элементов:", plus)
+	return plus
 }
