@@ -1,11 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
-
-func dellodd() {
-	delodd := []int64{-98, -7, -4, 1000, 3, 4, 8, 34, 48}
+func dellodd(delodd []int64) []int64 {
 	var (
 		podsnos = 0
 	)
@@ -18,5 +13,5 @@ func dellodd() {
 	}
 	delodd = delodd[:podsnos]
 
-	fmt.Println("Результат:", delodd)
+	return delodd
 }
