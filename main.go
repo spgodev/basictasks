@@ -8,7 +8,7 @@ func main() {
 	//arithm()     // Среднее арифмитическое tsk4
 	//bigone()     // Самое большое tsk5
 	//strings()    // Максимальная строка tsk6
-	swap()       // Переворот среза tsk7
+	//swap()       // Переворот среза tsk7
 	dellodd()    // Удалить четные tsk8
 	alt()        // Времянка tsk8 wrong logic
 	zapros()     // Проверка наличия элемента tsk9

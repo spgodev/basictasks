@@ -1,11 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
-
-func swap() {
-	rot := []int64{-98, -7, -4, 1000, 3, 4, 8, 34, 48}
+func swap(rot []int64) []int64 {
 	var (
 		temp int64
 		sum  int64
@@ -20,5 +15,5 @@ func swap() {
 		rot[i] = rot[int(sum)-1-i]
 		rot[int(sum)-1-i] = temp
 	}
-	fmt.Println(rot)
+	return rot
 }
