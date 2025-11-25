@@ -1,26 +1,29 @@
 package main
 
 import (
-	"fmt"
+	"strings"
 )
 
-func grades() {
-	grades := []int{1, 2, 3, 4, 5}
+func grades(tablegrades []int) string {
+	n := len(tablegrades)
+	results := make([]string, n) // заранее создаём срез нужной длины
 
-	for _, grade := range grades {
+	for i, grade := range tablegrades {
 		switch grade {
 		case 1:
-			fmt.Println("Very Bad")
+			results[i] = "Very Bad"
 		case 2:
-			fmt.Println("Bad")
+			results[i] = "Bad"
 		case 3:
-			fmt.Println("Average")
+			results[i] = "Average"
 		case 4:
-			fmt.Println("Good")
+			results[i] = "Good"
 		case 5:
-			fmt.Println("Excellent")
+			results[i] = "Excellent"
 		default:
-			fmt.Println("Unknown grade")
+			results[i] = "Unknown grade"
 		}
 	}
+
+	return strings.Join(results, ", ")
 }

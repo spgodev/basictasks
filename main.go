@@ -17,5 +17,5 @@ func main() {
 	//delldbl()    // Удаление повторяющихся элементов tsk12
 	//sortirovka() // Разделение на четные и нечетные tsk13
 	//foundindex() // Найти индекс числа tsk14
-	grades() // Оценки tsk15
+	//grades() // Оценки tsk15
 }
