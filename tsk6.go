@@ -1,11 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
-
-func strings() {
-	names := []string{"Max", "Dmitriy", "Alexander", "Sergey", "Anthony", "Tolyan"}
+func strings1(names []string) string {
 	var (
 		maxstring       string = names[0]
 		maxcountsymbols int64  = 0
@@ -22,9 +17,5 @@ func strings() {
 		}
 		currentlens = 0
 	}
-	if maxcountsymbols%2 == 0 {
-		fmt.Println("Максимальная четное имя", maxstring)
-	} else {
-		fmt.Println("Максимальное нечетное имя", maxstring)
-	}
+	return maxstring
 }
