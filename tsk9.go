@@ -1,16 +1,11 @@
 package main
 
-func zapros() {
-	names := []string{"Max", "Dmitriy", "Alexander", "Sergey", "Anthony", "Tolyan"}
-	var (
-		imput  string = "Dmitriy" //  Строка для поиска
-		target bool   = false
-	)
+func zapros(names []string, imput string) bool {
+
 	for _, v := range names {
 		if v == imput {
-			target = true
-			break
+			return true
 		}
 	}
-	println(target)
+	return false
 }
