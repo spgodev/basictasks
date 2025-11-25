@@ -1,11 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
-
-func sortirovka() {
-	sort := []int64{1, 2, 3, 4, 6, 7, 8, 10}
+func sortirovka(sort []int64) ([]int64, []int64) {
 	var (
 		evenCount int
 		oddCount  int
@@ -32,5 +27,5 @@ func sortirovka() {
 		}
 	}
 
-	fmt.Println(even, odd)
+	return even, odd
 }
