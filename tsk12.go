@@ -1,9 +1,6 @@
 package main
 
-import "fmt"
-
-func delldbl() {
-	deldbl := []int64{-98, -7, -7, 1000, 3, 4, 4, 4, 48}
+func delldbl(deldbl []int64) []int64 {
 	var (
 		vs int = 1
 	)
@@ -14,5 +11,5 @@ func delldbl() {
 		}
 	}
 	deldbl = deldbl[:vs]
-	fmt.Println(deldbl)
+	return deldbl
 }
