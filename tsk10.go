@@ -1,11 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
-
-func dubl() {
-	rpt1 := []int64{1, 2, 10, 15}
+func dubl(rpt1 []int64) []int64 {
 	rpt2 := make([]int64, len(rpt1)*2)
 	var (
 		count int
@@ -16,5 +11,5 @@ func dubl() {
 		rpt2[count] = value
 		count++
 	}
-	fmt.Println(rpt2)
+	return rpt2
 }
