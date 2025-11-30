@@ -30,6 +30,8 @@ func TestSumma(t *testing.T) {
 	}
 	for _, testCase := range testTable {
 		result := summa(testCase.sums)
+		// Лучше пользоваться стандартными функциями. Можно использовать require.InDelta
+		// а почему вообще рассхождение происходит?
 		if !almostEqual(result, testCase.expected, 1e-9) {
 			t.Errorf("Incorrect summa. Expected: %f, got: %f", testCase.expected, result)
 		}

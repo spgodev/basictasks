@@ -1,11 +1,13 @@
 package main
 
 func swap(rot []int64) []int64 {
+	// :=
 	var (
 		temp int64
 		sum  int64
 		half int64
 	)
+	// можно использовать len
 	for range rot {
 		sum++
 	}

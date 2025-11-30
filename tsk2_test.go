@@ -25,6 +25,7 @@ func TestCounteven(t *testing.T) {
 	}
 	for _, testCase := range testTable {
 		result := counteven(testCase.even)
+		// можно использовать require.Equal
 		if result != testCase.expected {
 			t.Errorf("Incorrect count. Expected %d, got %d", testCase.expected, result)
 		}

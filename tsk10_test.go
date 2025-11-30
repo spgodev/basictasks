@@ -13,6 +13,15 @@ func TestDubl(t *testing.T) {
 		rpt1     []int64
 		expected []int64
 	}{
+		// все упало (
+		{
+			rpt1:     nil,
+			expected: nil,
+		},
+		{
+			rpt1:     []int64{},
+			expected: []int64{},
+		},
 		{
 			rpt1:     []int64{1, 2, 10, 15},
 			expected: []int64{1, 1, 2, 2, 10, 10, 15, 15},

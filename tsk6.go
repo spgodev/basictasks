@@ -1,5 +1,6 @@
 package main
 
+// почему 2 задачи с номером 6?
 func strings1(names []string) string {
 	var (
 		maxstring       string = names[0]
