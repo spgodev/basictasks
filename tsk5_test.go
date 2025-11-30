@@ -13,6 +13,14 @@ func TestBigone(t *testing.T) {
 		expected int64
 	}{
 		{
+			num:      nil,
+			expected: 0,
+		},
+		{
+			num:      []int64{},
+			expected: 0,
+		},
+		{
 			num:      []int64{-98, -7, -4, 47, 3, 4, 8, 34, 48},
 			expected: 48,
 		},

@@ -7,6 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// Тесты не проходят.
 func TestArithm(t *testing.T) {
 	testTable := []struct {
 		num      []int64

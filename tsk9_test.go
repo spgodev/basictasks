@@ -8,6 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// а если путсой slice передам?
 func TestZapros(t *testing.T) {
 	testTable := []struct {
 		names    []string

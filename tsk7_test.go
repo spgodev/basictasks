@@ -8,6 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// что будет если 1 элемент в  slice?
 func TestSwap(t *testing.T) {
 	testTable := []struct {
 		rot      []int64

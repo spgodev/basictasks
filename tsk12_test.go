@@ -13,6 +13,11 @@ func TestDelldbl(t *testing.T) {
 		deldbl   []int64
 		expected []int64
 	}{
+		// упал
+		{
+			deldbl:   []int64{},
+			expected: []int64{},
+		},
 		{
 			deldbl:   []int64{-98, -7, -7, 1000, 3, 4, 4, 4, 48},
 			expected: []int64{-98, -7, 1000, 3, 4, 48},
