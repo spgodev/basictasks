@@ -1,6 +1,7 @@
 package main
 
 // поправь замечания из предыдущиз задач
+asd as
 func countodd(odd []int64) int64 {
 	var (
 		count int64
