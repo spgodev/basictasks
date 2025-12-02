@@ -1,13 +1,13 @@
 package main
 
-func summa(sums []float64) float64 {
+func calculateSum(nums []float64) float64 {
 
 	var (
-		plus float64
+		sum float64
 	)
 
-	for _, v := range sums {
-		plus += v
+	for _, v := range nums {
+		sum += v
 	}
-	return plus
+	return sum
 }
