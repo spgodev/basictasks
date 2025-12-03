@@ -9,37 +9,37 @@ import (
 )
 
 // а если путсой slice передам?
-func TestZapros(t *testing.T) {
+func TestContaines(t *testing.T) {
 	testTable := []struct {
 		names    []string
-		imput    string
+		input    string
 		expected bool
 	}{
 		{
 			names:    []string{"Max", "Dmitriy", "Alexander", "Sergey", "Anthony", "Tolyan"},
-			imput:    "Sergey",
+			input:    "Sergey",
 			expected: true,
 		},
 		{
 			names:    []string{"Max", "Dmitriy", "Alexander", "Sergey", "Anthony", "Tolyan"},
-			imput:    "Anton",
+			input:    "Anton",
 			expected: false,
 		},
 		{
 			names:    []string{"Vova"},
-			imput:    "Sergey",
+			input:    "Sergey",
 			expected: false,
 		},
 	}
 
 	for _, tc := range testTable {
-		result := zapros(tc.names, tc.imput)
+		result := Containes(tc.names, tc.input)
 
 		assert.Equal(
 			t,
 			tc.expected,
 			result,
-			fmt.Sprintf("Input: %v, Search: %s, Expected: %v, Got: %v", tc.names, tc.imput, tc.expected, result),
+			fmt.Sprintf("Input: %v, Search: %s, Expected: %v, Got: %v", tc.names, tc.input, tc.expected, result),
 		)
 	}
 }

@@ -4,11 +4,11 @@ import (
 	"strings"
 )
 
-func grades(tablegrades []int) string {
-	n := len(tablegrades)
+func Grades(tableGrades []int) string {
+	n := len(tableGrades)
 	results := make([]string, n) // заранее создаём срез нужной длины
 
-	for i, grade := range tablegrades {
+	for i, grade := range tableGrades {
 		switch grade {
 		case 1:
 			results[i] = "Very Bad"

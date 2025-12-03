@@ -1,17 +1,15 @@
 package main
 
-func summa(sums []float64) float64 {
+func CalculatedSum(nums []float64) float64 {
 	// 1. Излишнее усложнение синтаксиса.
 	// самый простой и читабельный вариант - plus := 0.0
 	// 2. По названию переменной нужно понимать зачем она нужна.
 	// название plus ничего в себе не несет. Нужно переименовать в sum
 	// Тетс правка
-	var (
-		plus float64
-	)
+	sum := 0.0
 
-	for _, v := range sums {
-		plus += v
+	for _, v := range nums {
+		sum += v
 	}
-	return plus
+	return sum
 }

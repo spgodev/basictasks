@@ -8,27 +8,27 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestDelodd(t *testing.T) {
+func TestRemoveOdd(t *testing.T) {
 	testTable := []struct {
-		delodd   []int64
+		nums     []int64
 		expected []int64
 	}{
 		{
-			delodd:   []int64{-98, -7, -4, 1000, 3, 4, 8, 34, 48},
+			nums:     []int64{-98, -7, -4, 1000, 3, 4, 8, 34, 48},
 			expected: []int64{-7, 3},
 		},
 		{
-			delodd:   []int64{-98, -4, 1000, 4, 8, 34, 48},
+			nums:     []int64{-98, -4, 1000, 4, 8, 34, 48},
 			expected: []int64{},
 		},
 		{
-			delodd:   []int64{0, 1, 2, 3},
+			nums:     []int64{0, 1, 2, 3},
 			expected: []int64{1, 3},
 		},
 	}
 
 	for _, tc := range testTable {
-		result := dellodd(tc.delodd)
+		result := RemoveOdd(tc.nums)
 
 		assert.Equal(
 			t,

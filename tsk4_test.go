@@ -8,7 +8,7 @@ import (
 )
 
 // Тесты не проходят.
-func TestArithm(t *testing.T) {
+func TestCalculateArithmeticMean(t *testing.T) {
 	testTable := []struct {
 		num      []int64
 		expected string
@@ -23,12 +23,12 @@ func TestArithm(t *testing.T) {
 		},
 		{
 			num:      []int64{1, 1},
-			expected: "Среднее арифмитическое = 2",
+			expected: "Среднее арифмитическое = 1",
 		},
 	}
 
 	for _, tc := range testTable {
-		result := arithm(tc.num)
+		result := CalculateArithmeticMean(tc.num)
 
 		assert.Equal(
 			t,

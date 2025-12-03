@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestSringsfortest(t *testing.T) {
+func TestSearchMaxLenString(t *testing.T) {
 	testTable := []struct {
 		names    []string
 		expected string
@@ -28,7 +28,7 @@ func TestSringsfortest(t *testing.T) {
 	}
 
 	for _, tc := range testTable {
-		result := stringsfortest(tc.names)
+		result := SearchMaxLenString(tc.names)
 
 		assert.Equal(
 			t,

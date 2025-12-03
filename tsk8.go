@@ -1,17 +1,15 @@
 package main
 
-func dellodd(delodd []int64) []int64 {
-	var (
-		podsnos = 0
-	)
+func RemoveOdd(nums []int64) []int64 {
+	removeCount := int64(0)
 
-	for _, v := range delodd {
+	for _, v := range nums {
 		if v%2 != 0 {
-			delodd[podsnos] = v
-			podsnos++
+			nums[removeCount] = v
+			removeCount++
 		}
 	}
-	delodd = delodd[:podsnos]
+	nums = nums[:removeCount]
 
-	return delodd
+	return nums
 }
