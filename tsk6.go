@@ -1,6 +1,7 @@
 package main
 
 // почему 2 задачи с номером 6?
+// просто хотел показать двее логики решений, как решал когда думал что мне нельзя пользоваться len
 func strings1(names []string) string {
 	var (
 		maxstring       string = names[0]

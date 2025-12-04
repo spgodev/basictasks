@@ -1,21 +1,11 @@
 package main
 
-func swap(rot []int64) []int64 {
-	// :=
-	var (
-		temp int64
-		sum  int64
-		half int64
-	)
+func Reverse(nums []int64) []int64 {
 	// можно использовать len
-	for range rot {
-		sum++
+
+	n := len(nums)
+	for i := 0; i < n/2; i++ {
+		nums[i], nums[n-1-i] = nums[n-1-i], nums[i]
 	}
-	half = sum / 2
-	for i := 0; i < int(half); i++ {
-		temp = rot[i]
-		rot[i] = rot[int(sum)-1-i]
-		rot[int(sum)-1-i] = temp
-	}
-	return rot
+	return nums
 }

@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestBigone(t *testing.T) {
+func TestMaxValueSearch(t *testing.T) {
 	testTable := []struct {
 		num      []int64
 		expected int64
@@ -35,7 +35,7 @@ func TestBigone(t *testing.T) {
 	}
 
 	for _, tc := range testTable {
-		result := bigone(tc.num)
+		result := MaxValueSearch(tc.num)
 
 		assert.Equal(
 			t,

@@ -1,15 +1,16 @@
 package main
 
-func delldbl(deldbl []int64) []int64 {
-	var (
-		vs int = 1
-	)
-	for i := 1; i < len(deldbl); i++ {
-		if deldbl[i] != deldbl[vs-1] {
-			deldbl[vs] = deldbl[i]
-			vs++
+func RemoveDuplicate(input []int64) []int64 {
+	if len(input) == 0 {
+		return input
+	}
+	remover := 1
+	for i := 1; i < len(input); i++ {
+		if input[i] != input[remover-1] {
+			input[remover] = input[i]
+			remover++
 		}
 	}
-	deldbl = deldbl[:vs]
-	return deldbl
+	input = input[:remover]
+	return input
 }

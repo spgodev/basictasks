@@ -1,10 +1,10 @@
 package main
 
 // input
-func zapros(names []string, imput string) bool {
+func Containes(names []string, input string) bool {
 
 	for _, v := range names {
-		if v == imput {
+		if v == input {
 			return true
 		}
 	}

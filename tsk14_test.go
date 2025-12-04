@@ -8,31 +8,31 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestFoundindex(t *testing.T) {
+func TestFoundIndex(t *testing.T) {
 	testTable := []struct {
-		indexf   []int64
-		zapros   int64
+		nums     []int64
+		input    int64
 		expected int
 	}{
 		{
-			indexf:   []int64{-98, -7, -7, 1000, 3, 4, 4, 4, 48},
-			zapros:   -98,
+			nums:     []int64{-98, -7, -7, 1000, 3, 4, 4, 4, 48},
+			input:    -98,
 			expected: 0,
 		},
 		{
-			indexf:   []int64{-98, -7, -7, 1000, 3, 4, 4, 4, 48},
-			zapros:   34,
+			nums:     []int64{-98, -7, -7, 1000, 3, 4, 4, 4, 48},
+			input:    34,
 			expected: -1,
 		},
 		{
-			indexf:   []int64{},
-			zapros:   1,
+			nums:     []int64{},
+			input:    1,
 			expected: -1,
 		},
 	}
 
 	for _, tc := range testTable {
-		result := foundindex(tc.indexf, tc.zapros)
+		result := FoundIndex(tc.nums, tc.input)
 
 		assert.Equal(
 			t,

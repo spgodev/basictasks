@@ -1,21 +1,21 @@
 package main
 
 // название ни о чем не говорит
-func stringsfortest(names []string) string {
+func SearchMaxLenString(names []string) string {
 	if len(names) == 0 {
 		return ""
 	}
 
 	// camelCase
-	maxstring := names[0]
-	maxlen := len(maxstring)
+	maxString := names[0]
+	maxLen := len(maxString)
 
 	for _, v := range names {
-		if len(v) > maxlen {
-			maxstring = v
-			maxlen = len(v)
+		if len(v) > maxLen {
+			maxString = v
+			maxLen = len(v)
 		}
 	}
 
-	return maxstring
+	return maxString
 }

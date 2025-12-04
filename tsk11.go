@@ -1,12 +1,12 @@
 package main
 
-func dellel(delel []int64, idx int) []int64 {
-	if idx < 0 || idx >= len(delel) {
-		return delel
+func RemoveElement(nums []int64, idx int) []int64 {
+	if idx < 0 || idx >= len(nums) {
+		return nums
 	}
-	for i := idx; i < len(delel)-1; i++ {
-		delel[i] = delel[i+1]
+	for i := idx; i < len(nums)-1; i++ {
+		nums[i] = nums[i+1]
 	}
-	delel = delel[:len(delel)-1]
-	return delel
+	nums = nums[:len(nums)-1]
+	return nums
 }

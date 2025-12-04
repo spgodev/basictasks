@@ -8,36 +8,36 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestDubl(t *testing.T) {
+func TestDuplicate(t *testing.T) {
 	testTable := []struct {
-		rpt1     []int64
+		slice    []int64
 		expected []int64
 	}{
 		// все упало (
 		{
-			rpt1:     nil,
+			slice:    nil,
 			expected: nil,
 		},
 		{
-			rpt1:     []int64{},
+			slice:    []int64{},
 			expected: []int64{},
 		},
 		{
-			rpt1:     []int64{1, 2, 10, 15},
+			slice:    []int64{1, 2, 10, 15},
 			expected: []int64{1, 1, 2, 2, 10, 10, 15, 15},
 		},
 		{
-			rpt1:     []int64{},
+			slice:    []int64{},
 			expected: []int64{},
 		},
 		{
-			rpt1:     []int64{0, 1},
+			slice:    []int64{0, 1},
 			expected: []int64{0, 0, 1, 1},
 		},
 	}
 
 	for _, tc := range testTable {
-		result := dubl(tc.rpt1)
+		result := Duplicate(tc.slice)
 
 		assert.Equal(
 			t,
